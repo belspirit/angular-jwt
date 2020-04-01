@@ -1,0 +1,11 @@
+﻿<div class="card mt-4">
+    <h4 class="card-header">You're logged in</h4>
+    <div class="card-body">
+        <h6>User information from secure api end point</h6>
+        <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
+        <div *ngIf="user">
+            <p *ngIf="user.email">Email: {{user.email}}</p>
+            <p *ngIf="user.iat">IAT: {{user.iat}}</p>
+        </div>
+    </div>
+</div>

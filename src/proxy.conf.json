@@ -1,0 +1,9 @@
+{
+    "/users2/*": {
+        "target": "http://be.dnsid.org/users",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {"^/users" : ""}
+    }
+}
